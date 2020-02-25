@@ -1,0 +1,8 @@
+{% extends '../index.html' %}
+
+{% block form %}
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add task</button>
+    </form>
+{% endblock form %}
